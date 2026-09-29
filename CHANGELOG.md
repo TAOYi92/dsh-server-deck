@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1
+
+- peer 白名单补 DSH `0.1.7-rc.2` / `0.2.0-rc.1` / `0.2.0-rc.2`：rc 预发布不被既有 `>=`/`^` 范围覆盖，安装报警告（运行时不受影响）。Closes #22.
+
 ## 0.4.0
 
 - 卡片新增实时网速（↓接收 / ↑发送）与当月流量累计。Linux 双快照 `/proc/net/dev`，Darwin/BSD `netstat -ibn`，Windows CIM 网卡差分；lo / docker / veth / br- / tun / wg 等虚拟口跳过，Proxmox `vmbr*` 与 Windows `vEthernet` 计入。Closes #20.
